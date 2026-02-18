@@ -68,7 +68,7 @@ docker compose up --build
 ```
 
 This starts:
-- Postgres on `localhost:5432`
+- Postgres on `localhost:5433`
 - API on `localhost:3000`
 
 Container startup runs:
@@ -79,6 +79,9 @@ Container startup runs:
 ## Swagger
 - URL: `http://localhost:3000/docs`
 - Bearer auth is configured for protected endpoints.
+## Postman
+- URL for published documentation: `https://documenter.getpostman.com/view/23652017/2sBXcDHMSX`
+
 
 ## Scripts
 - `npm run start:dev` start in watch mode
