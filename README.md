@@ -88,6 +88,7 @@ Container startup runs:
 - `npm run build` build production
 - `npm run start:prod` run compiled app
 - `npm run test` run unit tests
+- `npm run test:e2e` run e2e integration tests (in-memory Postgres via pg-mem)
 - `npm run test:cov` run coverage
 - `npm run migration:run` apply migrations
 - `npm run migration:revert` revert last migration
@@ -199,6 +200,7 @@ Included tests:
 - `src/auth/auth.service.spec.ts`
 - `src/wallets/wallets.service.spec.ts`
 - `src/transfers/transfers.service.spec.ts`
+- `test/app.e2e-spec.ts` (full HTTP flow: register/login, wallet create, credit initialize/verify, pending transfer, admin approve, monthly report)
 
 ## Notes
 - Amounts are stored as `numeric(18,2)`.
